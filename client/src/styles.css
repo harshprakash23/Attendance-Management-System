@@ -1,0 +1,100 @@
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+.sidebar { background-color: #1e3a8a; color: white; width: 256px; display: flex; flex-direction: column; height: 100vh; transition: all 0.3s ease; position: fixed; }
+
+.sidebar.collapsed { width: 70px; }
+
+.sidebar.collapsed .nav-text { display: none; }
+
+.sidebar.collapsed .logo-text { display: none; }
+
+.main-content { margin-left: 256px; transition: all 0.3s ease; }
+
+.sidebar.collapsed + .main-content { margin-left: 70px; }
+
+.nav-item a { color: white; opacity: 0.75; display: flex; align-items: center; padding: 12px 24px; text-decoration: none; }
+
+.nav-item a:hover { opacity: 1; }
+
+.nav-item i { margin-right: 12px; }
+
+.logo-text { font-size: 20px; font-weight: bold; }
+
+.student-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.student-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+
+.attendance-toggle { position: relative; display: inline-block; width: 60px; height: 30px; }
+
+.attendance-toggle input { opacity: 0; width: 0; height: 0; }
+
+.attendance-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #f87171; transition: 0.4s; border-radius: 34px; }
+
+.attendance-slider:before { position: absolute; content: ""; height: 22px; width: 22px; left: 4px; bottom: 4px; background-color: white; transition: 0.4s; border-radius: 50%; }
+
+input:checked + .attendance-slider { background-color: #4ade80; }
+
+input:checked + .attendance-slider:before { transform: translateX(30px); }
+
+header { background-color: white; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); padding: 16px; display: flex; justify-content: space-between; align-items: center; }
+
+header h1 { font-size: 20px; font-weight: 600; color: #1f2937; }
+
+.search-container { position: relative; display: inline-block; }
+
+.search-container input { padding: 8px 12px 8px 36px; border-radius: 9999px; border: 1px solid #d1d5db; outline: none; }
+
+.search-container input:focus { border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); }
+
+.search-container i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #9ca3af; }
+
+.notification-button { padding: 8px; border-radius: 9999px; background-color: #f3f4f6; color: #4b5563; border: none; cursor: pointer; }
+
+.notification-button:hover { background-color: #e5e7eb; }
+
+.card { background-color: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); padding: 24px; }
+
+.card-icon { padding: 12px; border-radius: 9999px; margin-right: 16px; }
+
+.card-icon.blue { background-color: #dbeafe; color: #2563eb; }
+
+.card-icon.green { background-color: #d1fae5; color: #16a34a; }
+
+.card-icon.yellow { background-color: #fef9c3; color: #d97706; }
+
+.card-icon.purple { background-color: #f3e8ff; color: #7c3aed; }
+
+.card h3 { font-size: 24px; font-weight: bold; }
+
+.card p { color: #6b7280; }
+
+.table-container { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { padding: 12px 24px; text-align: left; }
+
+th { background-color: #f9fafb; color: #6b7280; font-size: 12px; font-weight: 500; text-transform: uppercase; }
+
+tr { border-bottom: 1px solid #e5e7eb; }
+
+.progress-bar { width: 64px; background-color: #e5e7eb; border-radius: 9999px; height: 10px; margin-right: 8px; }
+
+.progress-bar-fill { background-color: #3b82f6; height: 10px; border-radius: 9999px; }
+
+.view-all { color: #3b82f6; text-decoration: none; }
+
+.view-all:hover { color: #1d4ed8; }
+
+.form-container { display: grid; gap: 16px; max-width: 600px; }
+
+.form-container label { display: block; margin-bottom: 4px; }
+
+.form-container input, .form-container select { width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; }
+
+.form-container button { padding: 8px 16px; background-color: #3b82f6; color: white; border: none; border-radius: 4px; cursor: pointer; }
+
+.form-container button:hover { background-color: #1d4ed8; }
+
+.student-list { display: grid; gap: 16px; }
