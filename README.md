@@ -184,7 +184,16 @@ PORT=5000
 
 ## Screenshots
 
-*(Add screenshots of your application here to showcase the UI)*
+<img width="2200" height="1171" alt="image" src="https://github.com/user-attachments/assets/f826efc5-ec67-4e95-9a0a-7cc452ba6eba" />
+<img width="2213" height="1176" alt="image" src="https://github.com/user-attachments/assets/a5120b58-3f90-4e21-b21b-a0ac9bf2549c" />
+<img width="1052" height="1033" alt="image" src="https://github.com/user-attachments/assets/98ff670a-bbe3-4ab1-87ba-6971d081a199" />
+<img width="2136" height="1149" alt="image" src="https://github.com/user-attachments/assets/6a8ebd92-37d7-4aff-9b8c-b9279ddddce2" />
+<img width="2120" height="1179" alt="image" src="https://github.com/user-attachments/assets/7e773161-93c0-46bd-b9d7-9338ab0cb2e8" />
+
+
+
+
+
 
 ## Contributing
 
